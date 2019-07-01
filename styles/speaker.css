@@ -18,7 +18,41 @@ header{
 
 
 }
+#nav_menu ul{
+	padding: 0em;
+	margin: 0em;
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#nav_menu ul li{
+	display: inline;
 
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top:100%;
+}
+#nav_menu ul ul li { float: none;
+}
+
+#nav_menu ul li:hover >ul{
+	display:block;
+}
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#nav_menu ul lu a {
+	font-weight:bold;
+	background-color: #800000;
+	color: white;
+}
+#nav_menu ul li a.current {text-decoration: yellow;}
 
 
 header img {

@@ -30,16 +30,37 @@ header{
 	display: inline;
 
 }
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top:100%;
+}
+#nav_menu ul ul li { float: none;
+}
+
+#nav_menu ul li:hover >ul{
+	display:block;
+}
+
+
 #nav_menu ul lu a {
 	font-weight:bold;
 	background-color: #800000;
 	color: white;
 }
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 #nav_menu ul li a.current {text-decoration: yellow;}
 
 header img {
 	float: left;
 }
+
 	h2{
 		font-size: 170%;
 		color: #800000;
@@ -58,6 +79,10 @@ header img {
 section {
 	width: 525px;
 	float: right;
+}
+
+section.ul{
+	padding: 0 0 .25em 1.25em;
 }
 
 aside{
@@ -97,13 +122,18 @@ main {
 
 
 /* the styles for the footer */
+
+
+
 footer{
 	background-color: #931420;
 	color: #FFFFFF;
 }
+
+
 footer p {
 	padding: 1em 0;
-	float: clear;
+
 }
 
 	h2{
