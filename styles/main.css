@@ -42,6 +42,10 @@ header{
 #nav_menu ul li:hover >ul{
 	display:block;
 }
+#nav_menu a.current{
+	color:yellow;
+}
+
 
 
 #nav_menu ul lu a {
